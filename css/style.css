@@ -1,0 +1,251 @@
+:root {
+    --fuenteHeading: 'Montserrat', sans-serif;
+    --fuenteParrafos:'Raleway', sans-serif;
+    --colorFondo: #2b2a29;
+    --colorOscuro: #202020;
+    --colorPrimario: #ddaa1e;
+    --colorSecundario: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    /* font-size: 100%; */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: var(--fuenteParrafos);
+    font-size: 1rem;
+    background-color: var(--colorFondo);
+    /* align-items: center; */
+}
+
+h1,h2,h3 {
+    font-family: var(--fuenteHeading);
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--colorOscuro);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+/* Logo */
+.header .logo {
+    width: fit-content;
+}
+.header .logo a {
+    text-decoration: none;
+}
+.header .logo a h1 {
+    color: var(--colorSecundario);
+}
+
+/* BARRA DE NAVEGACION */
+.header .navegacion {
+    width: fit-content;
+}
+.header .navegacion a {
+    font-size: 1.2rem;
+    margin: 1rem;
+    color: var(--colorPrimario);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.header .navegacion a:hover {
+    color: var(--colorSecundario);
+    border-bottom: .2rem solid var(--colorSecundario);
+    padding-bottom: .3rem;
+}
+
+/* Imagen de fondo */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    z-index: 10;
+}
+.imagen {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/vaso-fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imagen::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .5;
+}
+
+/* TEXTO DE LA IMAGEN */
+.imagen-texto {
+    width: 45rem;
+    position: absolute;
+    top: 20%;
+    padding: 1rem;
+    color: var(--colorSecundario);
+}
+.imagen-texto h2{
+    font-size: 3rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+.imagen-texto p {
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* BOTON: CATALOGO */
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: .7rem;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: var(--colorPrimario);
+    margin-left: 2rem;
+    font-weight: bold;
+    border: 1.5px solid var(--colorPrimario);
+    border-radius: 4px;
+}
+.btn:hover {
+    background: var(--colorPrimario);
+    color: #000000;
+    letter-spacing: .2rem;
+}
+
+/* MAIN */
+.contenido-main {
+    justify-content: center;
+    margin: 5rem;
+}
+.contenido-main h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    line-height: 1.5;
+    margin: 20px 0;
+    padding: .5rem;
+    color: var(--colorSecundario);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+.contenido-main span {
+    color: var(--colorPrimario);
+}
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    flex-direction: row;
+    justify-content: center;
+}
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #202020;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px (0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.card img {
+    width: 100%;
+    height: 300px;
+}
+.card .contenido {
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p {
+    line-height: 1.5;
+    color: var(--colorSecundario);
+}
+.card .contenido h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: var(--colorSecundario);
+}
+.card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--colorPrimario);
+    font-weight: bold;
+    border: 1.5px solid var(--colorPrimario);
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.card .contenido a:hover {
+    background: var(--colorPrimario);
+    color: #000;
+}
+
+/* QUIENES SOMOS */
+.nosotros h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    line-height: 1.5;
+    margin: 20px 0;
+    padding: .5rem;
+    color: var(--colorSecundario);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+.nosotros span {
+    color: var(--colorPrimario);
+}
+.nosotros .row {
+    display: flex;
+    align-items: center;
+    background: var(--colorOscuro);
+    flex-wrap: wrap;
+}
+.nosotros .row .imagen-nosotros {
+    flex: 1 1 42rem;
+}
+.nosotros .row .imagen-nosotros img {
+    width: 100%;
+    border-radius: 50px;
+}
+.nosotros .row .nosotros-texto {
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+.nosotros .row .nosotros-texto h3 {
+    font-size: 2rem;
+    color: var(--colorPrimario);
+}
+.nosotros .row .nosotros-texto p {
+    font-size: 1rem;
+    color: var(--colorSecundario);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
