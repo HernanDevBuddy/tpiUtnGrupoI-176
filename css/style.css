@@ -1,0 +1,17 @@
+.masInfo{
+    display: none;
+}
+.precio{
+    color: #fd7e14;
+}
+#secCarrito{
+    border: 1px solid black;
+}
+/* #secCarrito ul{
+    display: inline;
+} */
+.progress{
+    border: 1px solid black;
+    padding: 1px;
+    box-shadow: 1px 1px 4px gray;
+}
