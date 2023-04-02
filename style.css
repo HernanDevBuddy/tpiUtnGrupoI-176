@@ -1,0 +1,16 @@
+body{
+    background-image: url(./muntimedia/img/IMG-20230327-WA0010.jpg);
+}
+.asterisco{
+    color: red;
+}
+.abajoimg{
+    text-align: center;
+    color: black;
+    font-size: 18px;
+}
+.verMas{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
