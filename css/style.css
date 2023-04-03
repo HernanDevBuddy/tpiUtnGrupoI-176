@@ -30,7 +30,22 @@ p {
 span {
     color: var(--colorPrimario);
 }
-
+.btn {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    padding: .7rem;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: var(--colorPrimario);
+    font-weight: bold;
+    border: 1.5px solid var(--colorPrimario);
+    border-radius: 4px;
+}
+.btn:hover {
+    background: var(--colorPrimario);
+    color: #000000;
+}
 :focus {
     color: #fff !important;
 }
@@ -40,16 +55,8 @@ span {
     position: fixed;
     z-index: 100;
 }
-/* Logo*/
-.navbar-toggler{
-    color: var(--colorSecundario);
-    background-color: var(--colorOscuro);
-}
-.flexible {
-    width: 100%;
-    justify-content: flex-end;
 
-}
+/* Logo*/
 .logo {
     color: var(--colorPrimario);
 }
@@ -60,8 +67,10 @@ span {
 /* BARRA DE NAVEGACIÓN */
 .navegacion {
     background-color: var(--colorOscuro);
+    padding: 0 0;
+    margin: 0 0;
 }
- .navegacion a {
+.navegacion a {
     font-size: 1.2rem;
     margin: .5rem;
     color: var(--colorPrimario);
@@ -71,15 +80,42 @@ span {
 .navegacion a:hover {
     color: #fff;
 }
+.navbar-nav {
+    width: 100%;
+}
+.navbar-nav .show {
+    background-color: var(--colorOscuro);
+}
 .dropdown-menu {
     background-color: var(--colorOscuro);
 }
-.dropdown-menu:hover {
-    background-color: var(--colorOscuro);
+.dropdown-item {
+    width: fit-content;
+}   
+.dropdown-item:focus {
+    background-color: var(--colorPrimario);
+}
+.dropdown-item:hover {
+    background-color: var(--colorPrimario);
+    color: var(--colorSecundario);
 }
 /* Menú hamburguesa */
-button .navbar-toggler {
+.navbar-toggler {
+    border: solid 5px var(--colorPrimario);
+    border-radius: .7rem;
+    outline-color: var(--colorPrimario);
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler{
+    color: var(--colorSecundario);
+    background-color: var(--colorOscuro);
+}
+ .navbar-toggler-icon{
     background-color: var(--colorPrimario);
+    border: none;
+    outline: none;
 }
 
 /** Imagen de Fondo **/
@@ -114,28 +150,13 @@ button .navbar-toggler {
     z-index: 10;
 }
 .hero .content h2{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
 }
 .hero .content p {
-    font-size: 2rem;
-}
-.btn {
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    padding: .7rem;
-    margin-top: 10px;
     font-size: 1.3rem;
-    color: var(--colorPrimario);
-    font-weight: bold;
-    border: 1.5px solid var(--colorPrimario);
-    border-radius: 4px;
 }
-.btn:hover {
-    background: var(--colorPrimario);
-    color: #000000;
-}
+
 
 /* NUESTRAS ÚLTIMAS NOVEDADES */
 .novedades h2 {
@@ -146,10 +167,10 @@ button .navbar-toggler {
     letter-spacing: .1rem;
 }
 .novedades {
-    margin: 3.5rem;
+    margin: 3rem 0;
 }
 .novedades .cards {
-    width: 100%;
+    width: auto;
 }
 .novedades .cards .card {
     width: 20rem;
@@ -207,8 +228,13 @@ button .navbar-toggler {
     font-weight: bold;
     letter-spacing: .4rem;
 }
+.team .cards {
+    width: 100%;    
+}
 .team .card {
+    width: 20rem;
     background-color: var(--colorOscuro);
+    margin: 2.5rem;
 }
 .team .card h4 {
     color: var(--colorPrimario);
@@ -228,7 +254,7 @@ button .navbar-toggler {
 
 /* CONTACTO */
 .contact {
-    margin: 4rem;
+    margin: 4rem 0;
 }
 .contact h2 {
     color: var(--colorSecundario);
@@ -236,6 +262,9 @@ button .navbar-toggler {
     font-size: 2.2rem;
     font-weight: bold;
     letter-spacing: .4rem;
+}
+.contact .contact-info {
+    width: auto;
 }
 .contact .mapa iframe {
     width: 100%;
@@ -316,3 +345,4 @@ footer h1 {
 .footer .container-enlaces li:hover {
     color: var(--colorSecundario);
 }
+
