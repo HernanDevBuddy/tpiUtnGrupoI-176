@@ -97,7 +97,7 @@ span {
 }
 .dropdown-item:hover {
     background-color: var(--colorPrimario);
-    color: var(--colorSecundario);
+    color: var(--colorOscuro);
 }
 /* Menú hamburguesa */
 .navbar-toggler {
@@ -157,14 +157,13 @@ span {
     font-size: 1.3rem;
 }
 
-
 /* NUESTRAS ÚLTIMAS NOVEDADES */
 .novedades h2 {
     color: var(--colorSecundario);
     text-transform: uppercase;
     font-size: 2.2rem;
     font-weight: bold;
-    letter-spacing: .1rem;
+    letter-spacing: .4rem;
 }
 .novedades {
     margin: 3rem 0;
@@ -253,8 +252,8 @@ span {
 }
 
 /* CONTACTO */
-.contact {
-    margin: 4rem 0;
+.contact{
+    margin: 3rem 0;
 }
 .contact h2 {
     color: var(--colorSecundario);
@@ -262,6 +261,7 @@ span {
     font-size: 2.2rem;
     font-weight: bold;
     letter-spacing: .4rem;
+    margin: 4rem 5rem;
 }
 .contact .contact-info {
     width: auto;
@@ -289,7 +289,7 @@ footer {
     position: relative;
     bottom: 0;
     left: 0;
-    padding: 2rem 8%;
+    padding: 1.5rem 8%;
     background-color: var(--colorOscuro);
     display: flex;
     flex-direction: column;
@@ -297,7 +297,7 @@ footer {
     align-items: center;
 }
 footer h1 {
-    height: 5rem;
+    height: 4rem;
     margin-bottom: 1rem;
     font-size: 3rem;
     color: var(--colorSecundario);
@@ -307,7 +307,7 @@ footer h1 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
+    margin-bottom: .2rem;
 }
 .social-icon {
     font-size: 2.3rem;
@@ -340,9 +340,8 @@ footer h1 {
 .copyright {
     color: var(--colorSecundario);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .footer .container-enlaces li:hover {
     color: var(--colorSecundario);
 }
-
