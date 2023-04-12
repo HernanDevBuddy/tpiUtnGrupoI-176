@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --fuenteHeading: 'Montserrat', sans-serif;
+    --fuenteParrafos:'Raleway', sans-serif;
+    --colorFondo: #2b2a29;
+    --colorOscuro: #202020;
+    --colorPrimario: #ddaa1e;
+    --colorSecundario: #fff;
+}
+/* Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--colorFondo);
+}
+
+h1,h2,h3,h4 {
+    font-family: var(--fuenteHeading);
+}
+p {
+    font-family: var(--fuenteParrafos);
+    color: var(--colorSecundario);
+}
+span {
+    color: var(--colorPrimario);
+}
+.btn {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    padding: .7rem;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: var(--colorPrimario);
+    font-weight: bold;
+    border: 1.5px solid var(--colorPrimario);
+    border-radius: 4px;
+}
+.btn:hover {
+    background: var(--colorPrimario);
+    color: #000000;
+}
+:focus {
+    color: #fff !important;
+}
+/* HEADER */
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* Logo*/
+.logo {
+    color: var(--colorPrimario);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header .logo:hover {
+    color: var(--colorSecundario);
+}
+.header .nav-container {
+    width: 100%;
+    height: 5rem;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.header .navegacion {
+    background-color: var(--colorOscuro);
+    padding: 0 ;
+    margin: 0 ;
+    height: 5rem;
+}
+.navegacion a {
+    font-size: 1.2rem;
+    margin: .5rem;
+    color: var(--colorPrimario);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navegacion a:hover {
+    color: #fff;
+}
+.navbar-nav {
+    width: 100%;
+    background-color: var(--colorOscuro);
+}
+
+.dropdown-menu {
+    background-color: var(--colorOscuro);
+}
+.dropdown-item {
+    width: fit-content;
+}   
+.dropdown-item:focus {
+    background-color: var(--colorPrimario);
+}
+.dropdown-item:hover {
+    background-color: var(--colorPrimario);
+    color: var(--colorOscuro);
+}
+/* Menú hamburguesa */
+.navbar-toggler {
+    border: solid 5px var(--colorPrimario);
+    border-radius: .7rem;
+    outline-color: var(--colorPrimario);
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler{
+    color: var(--colorSecundario);
+    background-color: var(--colorOscuro);
+}
+ .navbar-toggler-icon{
+    background-color: var(--colorPrimario);
+    border: none;
+    outline: none;
+}
+
+/** Imagen de Fondo **/
+.hero {
+    background-image: url(../img/vaso-fondo.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .5;
+    z-index: 1;
+}
+.hero .content {
+    width: 80%;
+    max-width: 40rem;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    padding: 1rem;
+    color: var(--colorSecundario);
+    z-index: 10;
+}
+.hero .content h2{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.hero .content p {
+    font-size: 1.3rem;
+}
+
+/* NUESTRAS ÚLTIMAS NOVEDADES */
+.novedades {
+    margin: 3rem 0;
+}
+.novedades h2 {
+    color: var(--colorSecundario);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: .4rem;
+}
+.novedades .cards {
+    width: auto;
+}
+.novedades .cards .card {
+    width: 20rem;
+    padding: 0;
+    border-radius: 1rem 1rem 0 0;
+    background-color: var(--colorOscuro);
+}
+.novedades .cards .card .imagen img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+.novedades .cards .card .content {
+    padding: 1rem;
+    color: #fff;
+}
+.novedades .cards .card .content p {
+    text-align: justify;
+}
+.novedades .cards .card .content .btn {
+    width: 100%;
+}
+.novedades .card:hover {
+    transform: translateY(-3%);
+}
+
+/* NOSOTROS */
+.about h2 {
+    color: var(--colorSecundario);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: .4rem;
+}
+.about {
+    width: 100%;
+}
+.about .image img {
+    width: 100%;
+    border-radius: 1rem;
+}
+.about h3 {
+    color: var(--colorPrimario);
+}
+.about .content p{
+    text-align: justify;
+}
+
+/* EQUIPO */
+.team h2 {
+    color: var(--colorSecundario);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: .4rem;
+}
+.team .cards {
+    width: 100%;    
+}
+.team .card {
+    width: 20rem;
+    background-color: var(--colorOscuro);
+    margin: 2.5rem;
+}
+.team .card h4 {
+    color: var(--colorPrimario);
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+.team .card p {
+    columns: var(--colorSecundario);
+    font-size: 1rem;
+}
+.team .socials-team a {
+    color: var(--colorSecundario);
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: .5rem;
+}
+
+/* CONTACTO */
+.contact{
+    margin: 3rem 0;
+}
+.contact h2 {
+    color: var(--colorSecundario);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: .4rem;
+    margin: 4rem 5rem;
+}
+.contact .contact-info {
+    width: auto;
+}
+.contact .mapa iframe {
+    width: 100%;
+    height: 20rem;
+    border-radius: 1rem;
+}
+.contact .h3 {
+    color: var(--colorPrimario);
+    font-size: 2rem;
+}
+.contact i {
+    color: var(--colorPrimario);
+    font-size: 2rem;
+}
+.contact p {
+    font-size: 1.2rem;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem 8%;
+    background-color: var(--colorOscuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h1 {
+    height: 4rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: var(--colorSecundario);
+}
+.container-social-icons, .container-enlaces {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: .2rem;
+}
+.social-icon {
+    font-size: 2.3rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    color: var(--colorPrimario);
+    text-decoration: none;
+}
+.social-icon:hover {
+    background: var(--colorPrimario);
+    color: #000000;
+}
+.container-enlaces {
+    font-size: 1.2rem;
+    margin: 1rem;
+    color: var(--colorPrimario);
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+.menu-item {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.copyright {
+    color: var(--colorSecundario);
+    text-align: center;
+    font-size: 1.2rem;
+}
+.footer .container-enlaces li:hover {
+    color: var(--colorSecundario);
+}
+/* formulario de conctacto */
+#contactoForm{
+    display:none ;
+    /* text-align: right; */
+}
+.asterisco{
+    color: red;
+}
+#resultadoValidacion{
+    background-color: rgba(244, 91, 91, 0.698);
+    color: red;
+} 
+.botonEnviar{
+    margin-top: 30px;
+    height: 40px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: rgb(0, 132, 255);
+    color: aliceblue;
+}
+.botonEnviar:hover{
+    background-color: #2345f1;
+}
+.cerrar{
+    
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    /* background-color: red;
+    color: white; */
+    border: none;
+}
+.cerrar:hover{
+    color: red;
+}
+input:focus{
+    color:#000 !important;
+}
+
+/* alerta de mensajes error */
+.error-message {
+    margin-left: 20px;
+    color: red;
+}
+.error-message.nombre-error {
+    background-color: #FFCACA;
+}
+.swal2-html-container{
+    text-align: inherit;
+    margin-inline: auto;
+    background-color: #FFCACA;
+}
