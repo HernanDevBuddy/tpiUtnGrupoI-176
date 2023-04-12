@@ -75,9 +75,22 @@
     </nav>
   </header>
 
-  <main class="container-fluid">
-      <div class="container-fluid pt-5 pb-5"></div>
+  
+  <div class="container-fluid pt-5 pb-5"></div>
 
+  
+  <main class="container-fluid">
+    
+    <div class="container-fluid novedades">
+      <h2 class="text-center my-4">
+        Nuestras últimas <span>novedades</span>
+      </h2>
+    
+      <div
+        class="cards row row-cols-xl-3 row-cols-md-2 gap-3 p-2 d-flex justify-content-center" id="containerDestacados"
+      >
+      </div>
+    </div>
     <!-- <a id="verCarrito" href="#containerCarrito"><button class="btn" id="carritoText">Ver Carrito</button></a> -->
     <section class="container" id="containerCarrito" style="display: none;">
 
@@ -141,11 +154,8 @@
     
     </section>
 
-      <!-- <section class="destacados row justify-content-around" id="containerDestacados">        
-      </section> -->
 
     <section id="sectionProducts">
-      <h2 class="h2 text-center tituloH2Modificado mt-5">Nuestros Productos</h2>
       <div class="productos row justify-content-around" id="containerProducts">
       </div>      
     </section>
@@ -178,5 +188,6 @@
     <script src="/src/arrayProductos.js"></script>
     <script src="/src/arrayCarrito.js"></script>
     <script src="/js/productos.js"></script>
+    <script src="../Js/index.js"></script>
 </body>
 </html>

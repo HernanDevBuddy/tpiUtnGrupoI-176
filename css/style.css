@@ -168,6 +168,9 @@ span {
 .novedades {
     margin: 3rem 0;
 }
+.modal-body{
+    letter-spacing: .15rem;
+}
 .novedades h2 {
     color: var(--colorSecundario);
     text-transform: uppercase;

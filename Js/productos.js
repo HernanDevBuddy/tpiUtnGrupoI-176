@@ -1,10 +1,13 @@
 const containerProducts = document.querySelector('#containerProducts')
 const containerCarrito = document.querySelector('#containerCarrito')
 const containerCategorias = document.querySelector('#containerCategorias')
+const sectionProducts = document.querySelector('#sectionProducts')
 
 
 function htmlProductosInterfaz(array){
-  containerProducts.innerHTML = ''
+  containerProducts.innerHTML = `
+  <h2 class="text-center tituloH2Modificado">Nuestros Productos</h2>
+  `
       for(let i = 0; i < array.length; i++) {
         containerProducts.innerHTML += `
         <div class="card col-xsm-12 col-sm-6 col-md-4 col-lg-3 text-center g-4 m-3">
@@ -84,15 +87,19 @@ function crearCarrito(){
       containerCarrito.style.display = "block";
       containerProducts.style.display = "none";
       containerCategorias.style.display = "none";
+      sectionProducts.style.display = "none";
     } else {
       verCarrito.innerText = "Ver Carrito"
       containerCarrito.style.display = "none";
       containerProducts.style.display = "flex";
       containerCategorias.style.display = "flex";
+      sectionProducts.style.display = "block";
     }
     let subtotal = 0
     let tempTotal = []
-    containerCarrito.innerHTML = ''
+
+    containerCarrito.innerHTML = `<h2 class="tituloH2Modificado text-center">REVISA TU PEDIDO.</h2>`
+
     for (let i = 0; i < carrito.length; i++) {
       subtotal= carrito[i].precio * carrito[i].cantidad;
       tempTotal.push(subtotal)
@@ -167,6 +174,6 @@ if(localStorage.getItem('carrito')) {
   modal.show();
 }
 
-
+// htmlDestacados()
 crearCarrito()
 verCategorias()
