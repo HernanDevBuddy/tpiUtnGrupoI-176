@@ -394,6 +394,9 @@ footer h1 {
 input:focus{
     color:#000 !important;
 }
+textarea:focus{
+    color:#000 !important;
+}
 
 /* alerta de mensajes error */
 .error-message {
