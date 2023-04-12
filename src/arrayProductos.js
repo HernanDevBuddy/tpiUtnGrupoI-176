@@ -9,9 +9,10 @@ const baseDatosProductos = [
         origen: 'Cork, Irlanda'
       },
       precio: 7800,
-      imagen: 'https://placehold.co/500x400/png',
+      imagen: './Multimedia/Images/jameson.webp',
       categoria: 'Whiskys',
-      stock: 10
+      stock: 10,
+      destacado: true
     },
     {
         id: 2,
@@ -23,9 +24,10 @@ const baseDatosProductos = [
         origen: 'Kilmarnock, Escocia, Reino Unido.'
       },
       precio: 13480,
-      imagen: 'https://placehold.co/500x400/png',
+      imagen: './Multimedia/Images/johnniewalker.png',
       categoria: 'Whiskys',
-      stock: 8
+      stock: 8,
+      destacado: false
     },
     {
         id: 3,
@@ -37,9 +39,10 @@ const baseDatosProductos = [
           origen: 'Aberdeen, Escocia.'
         },
         precio: 7750,
-        imagen: 'https://placehold.co/500x400/png',
+        imagen: './Multimedia/Images/chivas12.jpg',
         categoria: 'Whiskys',
-        stock: 4
+        stock: 4,
+        destacado: false
     },
     {
         id: 4,
@@ -51,9 +54,10 @@ const baseDatosProductos = [
           origen: 'Lynchburg, Tennessee, Estados Unidos.'
         },
         precio: 20150,
-        imagen: 'https://placehold.co/500x400/png',
+        imagen: './Multimedia/Images/jackdaniels.webp',
         categoria: 'Whiskys',
-        stock: 5
+        stock: 5,
+        destacado: false
     },
     {
         id: 5,
@@ -65,9 +69,10 @@ const baseDatosProductos = [
           origen: 'Argentina'
         },
         precio: 7350,
-        imagen: 'https://placehold.co/500x400/png',
+        imagen: './Multimedia/Images/conservadoracorona.jpg',
         categoria: 'Cervezas',
-        stock: 3
+        stock: 3,
+        destacado: true
     },
     {
         id: 6,
@@ -79,9 +84,10 @@ const baseDatosProductos = [
           origen: 'Argentina'
         },
         precio: 820,
-        imagen: 'https://placehold.co/500x400/png',
+        imagen: './Multimedia/Images/corona710.jpg',
         categoria: 'Cervezas',
-        stock: 25
+        stock: 25,
+        destacado: false
     },
     {
         id: 7,
@@ -93,9 +99,10 @@ const baseDatosProductos = [
           origen: 'Provincia de Santa Fé, Argentina.'
         },
         precio: 615,
-        imagen: 'https://placehold.co/500x400/png',
+        imagen: './Multimedia/Images/heineken.jpg',
         categoria: 'Cervezas',
-        stock: 18
+        stock: 18,
+        destacado: false
     },
     {
         id: 8,
@@ -107,9 +114,10 @@ const baseDatosProductos = [
           origen: 'Provincia de Buenos Aires, Argentina.'
         },
         precio: 2964,
-        imagen: 'https://placehold.co/500x400/png',
-        categoria: 'Cervezas',
-        stock: 22
+        imagen: './Multimedia/Images/fernet.webp',
+        categoria: 'Fernet',
+        stock: 22,
+        destacado: false
     },
     {
         id: 9,
@@ -121,9 +129,10 @@ const baseDatosProductos = [
           origen: 'Provincia de Buenos Aires, Argentina.'
         },
         precio: 3150,
-        imagen: 'https://placehold.co/500x400/png',
-        categoria: 'Cervezas',
-        stock: 6
+        imagen: './Multimedia/Images/fernetmundial.jpeg',
+        categoria: 'Fernet',
+        stock: 6,
+        destacado: true
     },
     {
         id: 10,
@@ -135,9 +144,10 @@ const baseDatosProductos = [
           origen: 'Cabernet Sauvignon: Coquimbito, Maipú.</br>Malbec: La Consulta, Valle de Uco. Provincia de Mendoza, Argentina.'
         },
         precio: 3450,
-        imagen: 'https://placehold.co/500x400/png',
+        imagen: './Multimedia/Images/vinorutini.jpg',
         categoria: 'Vinos',
-        stock: 5
+        stock: 5,
+        destacado: false
     },
     {
         id: 11,
@@ -149,9 +159,10 @@ const baseDatosProductos = [
           origen: 'Finca "La Linda", Vistalba. Provincia de Mendoza, Argentina.'
         },
         precio: 5100,
-        imagen: 'https://placehold.co/500x400/png',
+        imagen: './Multimedia/Images/vinoluigibosca.webp',
         categoria: 'Vinos',
-        stock: 2
+        stock: 2,
+        destacado: false
     },
     {
         id: 12,
@@ -163,22 +174,9 @@ const baseDatosProductos = [
           origen: 'Argentina.'
         },
         precio: 450,
-        imagen: 'https://placehold.co/500x400/png',
+        imagen: './Multimedia/Images/vino-toro.png',
         categoria: 'Vinos',
-        stock: 18
+        stock: 18,
+        destacado: false
       },
-      {
-        id: 13,
-        nombre: 'Tetrabrick Don Ernesto 1 Litro',
-        descripcion: 'Vino tinto joven y fresco, elaborado con uvas de la variedad Tempranillo, color rojo cereza intenso y brillante, con aromas a frutos rojos y negros, con notas florales y especiadas.</br>El vino Tetrabrick Don Ernesto de 1 litro es una opción económica y accesible para disfrutar de un vino tinto joven y fresco con una buena relación calidad-precio, que se adapta a cualquier situación y paladar.',
-        masInformacion: {
-          alcohol: '13%',
-          fabricante: 'Vinos Don Ernesto',
-          origen: 'Villa del Rosario, Córdoba, Argentina.'
-        },
-        precio: 430,
-        imagen: 'https://placehold.co/500x400/png',
-        categoria: 'Vinos',
-        stock: 12
-      }
   ]
