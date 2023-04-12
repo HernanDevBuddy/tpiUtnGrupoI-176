@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Shots & Co</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/styleProducts.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navegacion d-flex align-items-center">
+        <div class="logo">
+          <a href="../index.html"> <h1>Shots & Co</h1></a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="productos.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html#nosotros"
+                >Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html#team">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html#contacto"
+                >Contacto</a
+              >
+            </li>
+            <li class="nav-item">
+              <a id="verCarrito" class="nav-link" aria-current="page" href="#containerCarrito">Ver Carrito</a
+              >
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+
+  <main class="container-fluid">
+      <div class="container-fluid pt-5 pb-5"></div>
+
+    <!-- <a id="verCarrito" href="#containerCarrito"><button class="btn" id="carritoText">Ver Carrito</button></a> -->
+    <section class="container" id="containerCarrito" style="display: none;">
+
+      <!-- <div class="card mb-3 mt-3">
+        <div class="row g-0">
+          <div class="col-md-2">
+            <img src="https://placehold.co/200"/*${carrito[i].imagen}"*/ class="img-thumbnail rounded mx-auto d-block" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body text-center">
+              <h6 class="card-title">${carrito[i].nombre}</h6>
+              <p class="text-dark h5 precio">$${carrito[i].precio}</p>
+              <p class="text-dark h5">Cantidad:${carrito[i].cantidad}</p>
+              <p class="text-dark card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+            </div>
+          </div>
+          <div class="col-md-2 row justify-content-end ms-1">
+            <button class="btn btn-dark mt-2 mb-2">Borrar Producto</button>
+            <button class="btn btn-dark mt-2 mb-2">Agregar</button>
+            <button class="btn btn-dark mt-2 mb-2">Quitar</button>
+          </div>
+        </div>
+      </div> -->
+
+    </section>
+      <!-- Agrega un modal oculto en el cuerpo del documento HTML -->
+      <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+              <h1 class="modal-title text-warning fs-5" id="exampleModalLabel">HOLA DE NUEVO!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="h4 text-center">Tienes productos en tu carrito!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <section class="row justify-content-around" id="containerCategorias">
+      <h2 class="h2 text text-center mt-2 mb-5">Elige entre las categorías</h2>
+
+      <a class="card categoria col-xsm-12 col-sm-8 col-md-6 col-lg-3 h2 text-center" href="#sectionProducts">
+        <p class="card-title">Whiskys</p>
+        <img class="card-img img-categoria" src="../img/categoriaWhisky.jpg" alt="">
+      </a>
+      <a class="card categoria col-xsm-12 col-sm-8 col-md-6 col-lg-3 h2 text-center" href="#sectionProducts">
+        <p class="card-title">Cervezas</p>
+        <img class="card-img img-categoria" src="../img/categoriaCervezas.jpg" alt="">
+      </a>
+      <a class="card categoria col-xsm-12 col-sm-8 col-md-6 col-lg-3 h2 text-center" href="#sectionProducts">
+        <p class="card-title">Fernet</p>
+        <img class="card-img img-categoria" src="../img/categoriaFernet.jpg" alt="">
+      </a>
+      <a class="card categoria col-xsm-12 col-sm-8 col-md-6 col-lg-3 h2 text-center" href="#sectionProducts">
+        <p class="card-title">Vinos</p>
+        <img class="card-img img-categoria" src="../img/categoriaVinos.jpg" alt="">
+      </a>
+    
+    </section>
+
+      <!-- <section class="destacados row justify-content-around" id="containerDestacados">        
+      </section> -->
+
+    <section id="sectionProducts">
+      <h2 class="h2 text-center tituloH2Modificado mt-5">Nuestros Productos</h2>
+      <div class="productos row justify-content-around" id="containerProducts">
+      </div>      
+    </section>
+
+  </main>
+
+    <footer class="footer">
+      <h1 class="text-center">Shots & Co</h1>
+
+      <div class="container-social-icons">
+        <a href="https://instagram.com" target="_blank" rel=”noopener noreferrer” class="social-icon fab fa-instagram"></a>
+        <a href="https://facebook.com" target="_blank" rel=”noopener noreferrer” class="social-icon fab fa-facebook"></a>
+        <a href="https://twitter.com" target="_blank" rel=”noopener noreferrer” class="social-icon fab fa-twitter"></a>
+        <a href="https://linkedin.com" target="_blank" rel=”noopener noreferrer” class="social-icon fab fa-linkedin"></a>
+      </div>
+      <ul class="container-enlaces">
+        <li class="menu-item m-2"><a href="../index.html">Inicio</a></li>
+        <li class="menu-item m-2"><a href="./productos.html">Tienda</a></li>
+        <li class="menu-item m-2"><a href="../index.html#nosotros">Nosotros</a></li>
+        <li class="menu-item m-2"><a href="../index.html#team">Equipo</a></li>
+        <li class="menu-item m-2"><a href="../index.html#contacto">Contacto</a></li>
+      </ul>
+
+      <p class="copyright">
+        Shots & Co <span>|</span> Todos los derechos reservados © 2023
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="/src/arrayProductos.js"></script>
+    <script src="/src/arrayCarrito.js"></script>
+    <script src="/js/productos.js"></script>
+</body>
+</html>

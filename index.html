@@ -50,22 +50,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav d-flex justify-content-end">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#tienda"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Tienda
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Categoría 1</a></li>
-                  <li><a class="dropdown-item" href="#">Categoría 2</a></li>
-                  <li><a class="dropdown-item" href="#">Categoría 3</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./Pages/productos.html">Tienda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#nosotros"
@@ -90,62 +78,20 @@
       <div class="content">
         <h2>La noche comienza con Shots & Co!</h2>
         <p>Accede a nuestro catálogo de bebidas para tu próxima fiesta.</p>
-        <a href="#" class="btn">Catálogo</a>
+        <a href="./Pages/productos.html" class="btn">Catálogo</a>
       </div>
     </div>
 
     <!-- MAIN - NUESTRAS ULTIMAS NOVEDADES -->
-    <main class="novedades">
+    <main class="novedades" id="novedades">
       <div class="container">
         <h2 class="text-center my-4">
           Nuestras últimas <span>novedades</span>
         </h2>
 
         <div
-          class="cards row row-cols-xl-3 row-cols-md-2 gap-3 p-2 d-flex justify-content-center"
+          class="novedades cards row row-cols-xl-3 row-cols-md-2 gap-3 p-2 d-flex justify-content-center" id="containerDestacados"
         >
-          <div class="card">
-            <div class="imagen">
-              <img src="img/producto1.jpg" alt="imagenProducto1" />
-            </div>
-            <div class="content">
-              <h3 class="text-center m-1">Producto 1</h3>
-              <p class="">
-                Texto-texto-texto-texto-texto-texto-texto-texto-texto-texto-texto-texto-texto-texto-texto
-                inventore maiores ex incidunt aperiam velit aut quaerat?
-                Expedita, voluptatum.
-              </p>
-              <a href="#" class="btn">Ver producto</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="imagen">
-              <img src="img/producto2.jpg" alt="imagenProducto1" />
-            </div>
-            <div class="content">
-              <h3 class="text-center m-1">Producto 2</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti dolorem inventore maiores ex incidunt aperiam velit aut
-                quaerat? Expedita, voluptatum.
-              </p>
-              <a href="#" class="btn">Ver producto</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="imagen">
-              <img src="img/producto3.jpg" alt="imagenProducto1" />
-            </div>
-            <div class="content">
-              <h3 class="text-center m-1">Producto 3</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti dolorem inventore maiores ex incidunt aperiam velit aut
-                quaerat? Expedita, voluptatum.
-              </p>
-              <a href="#" class="btn">Ver producto</a>
-            </div>
-          </div>
         </div>
       </div>
     </main>
@@ -258,17 +204,16 @@
                 <img
                   alt=""
                   class="img-fluid img-thumbnail"
-                  src="img/vaso-fondo.jpg"
+                  src="img/rodrigo.jpg"
                 />
                 <h4 class="card-title py-2">Rodrigo Villarroel</h4>
                 <p class="card-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Sequi ipsam nostrum illo tempora esse quibusdam.
+                  Futuro empresario del Gaming, pero por ahora, un imprudente aprendiendo a programar.</br>De Cordoba, Argentina.
                 </p>
                 <p class="socials-team">
-                  <a href="#" class="fas fa-envelope"></a>
-                  <a href="#" class="fab fa-linkedin"></a>
-                  <a href="#" class="fab fa-github"></a>
+                  <a href="mailto:hernanborelli22@gmail.com" class="fas fa-envelope"></a>
+                  <a href="https://www.linkedin.com/in/hernanDevBuddy/" class="fab fa-linkedin" target="_blank" rel=”noopener noreferrer”></a>
+                  <a href="https://github.com/HernanDevBuddy/" class="fab fa-github" target="_blank" rel=”noopener noreferrer”></a>
                 </p>
               </div>
             </div>
@@ -379,26 +324,34 @@
       <h1 class="text-center">Shots & Co</h1>
 
       <div class="container-social-icons">
-        <a href="#" class="social-icon fab fa-instagram"></a>
-        <a href="#" class="social-icon fab fa-facebook"></a>
-        <a href="#" class="social-icon fab fa-twitter"></a>
-        <a href="#" class="social-icon fab fa-linkedin"></a>
+        <a href="https://instagram.com" target="_blank" rel=”noopener noreferrer” class="social-icon fab fa-instagram"></a>
+        <a href="https://facebook.com" target="_blank" rel=”noopener noreferrer” class="social-icon fab fa-facebook"></a>
+        <a href="https://twitter.com" target="_blank" rel=”noopener noreferrer” class="social-icon fab fa-twitter"></a>
+        <a href="https://linkedin.com" target="_blank" rel=”noopener noreferrer” class="social-icon fab fa-linkedin"></a>
       </div>
       <ul class="container-enlaces">
-        <li class="menu-item m-2">Inicio</li>
-        <li class="menu-item m-2">Tienda</li>
-        <li class="menu-item m-2">Nosotros</li>
-        <li class="menu-item m-2">Equipo</li>
-        <li class="menu-item m-2">Contacto</li>
+        <li class="menu-item m-2"><a href="./index.html">Inicio</a></li>
+        <li class="menu-item m-2"><a href="./Pages/productos.html">Tienda</a></li>
+        <li class="menu-item m-2"><a href="./index.html#nosotros">Nosotros</a></li>
+        <li class="menu-item m-2"><a href="./index.html#team">Equipo</a></li>
+        <li class="menu-item m-2"><a href="./index.html#contacto">Contacto</a></li>
       </ul>
 
       <p class="copyright">
         Shots & Co <span>|</span> Todos los derechos reservados © 2023
       </p>
     </footer>
+    <!-- productos -->
+    <script src="/src/arrayProductos.js"></script>
+    <script src="/src/arrayCarrito.js"></script>
+    <script src="./Js/productos.js"></script>
+    <script src="./Js/index.js"></script>
+
+
+
     <!-- para el form -->
-    <script src="./codigo.js"></script>
-    <script src="./validate.min.js"></script>
+    <script src="./Js/codigo.js"></script>
+    <script src="./Js/validate.min.js"></script>
     <!--  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
