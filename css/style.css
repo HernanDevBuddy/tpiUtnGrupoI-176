@@ -243,7 +243,7 @@ span {
 .team .card {
     width: 20rem;
     background-color: var(--colorOscuro);
-    margin: 2.5rem;
+    margin: 1.5rem;
 }
 .team .card h4 {
     color: var(--colorPrimario);
