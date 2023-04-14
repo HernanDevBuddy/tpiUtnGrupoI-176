@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/bohemian-typewriter');
+:root {
+    --fuenteHeading: 'Montserrat', sans-serif;
+    --fuenteParrafos:'Raleway', sans-serif;
+    --colorFondo: #2b2a29;
+    --colorOscuro: #202020;
+    --colorPrimario: #ddaa1e;
+    --colorSecundario: #fff;
+}
+
+
+/* Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--colorFondo);
+}
+
+h1,h2,h3,h4 {
+    font-family: var(--fuenteHeading);
+}
+p {
+    font-family: var(--fuenteParrafos);
+    color: var(--colorSecundario);
+}
+span {
+    color: var(--colorPrimario);
+}
+.btn {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    padding: .7rem;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: var(--colorPrimario);
+    font-weight: bold;
+    border: 1.5px solid var(--colorPrimario);
+    border-radius: 4px;
+}
+.btn:hover {
+    background: var(--colorPrimario);
+    color: #000000;
+}
+:focus {
+    color: #fff !important;
+}
+/* HEADER */
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* Logo*/
+.logo {
+    color: var(--colorPrimario);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header .logo:hover {
+    color: var(--colorSecundario);
+}
+.header .nav-container {
+    width: 100%;
+    height: 5rem;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.header .navegacion {
+    background-color: var(--colorOscuro);
+    padding: 0 ;
+    margin: 0 ;
+    height: 5rem;
+}
+.navegacion a {
+    font-size: 1.2rem;
+    margin: .5rem;
+    color: var(--colorPrimario);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navegacion a:hover {
+    color: #fff;
+}
+.navbar-nav {
+    width: 100%;
+    background-color: var(--colorOscuro);
+}
+
+.dropdown-menu {
+    background-color: var(--colorOscuro);
+}
+.dropdown-item {
+    width: fit-content;
+}   
+.dropdown-item:focus {
+    background-color: var(--colorPrimario);
+}
+.dropdown-item:hover {
+    background-color: var(--colorPrimario);
+    color: var(--colorOscuro);
+}
+/* Menú hamburguesa */
+.navbar-toggler {
+    border: solid 5px var(--colorPrimario);
+    border-radius: .7rem;
+    outline-color: var(--colorPrimario);
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler{
+    color: var(--colorSecundario);
+    background-color: var(--colorOscuro);
+}
+ .navbar-toggler-icon{
+    background-color: var(--colorPrimario);
+    border: none;
+    outline: none;
+}
+
+/* RECIBO */
+
+#contenedorRecibo{
+    background-color: var(--colorOscuro);
+}
+#contenedorRecibo ol{
+    background-color: var(--colorFondo);
+}
+#contenedorRecibo li{
+    background-color: rgb(73, 72, 72);
+    border: 1px solid var(--colorPrimario);
+}
+#contenedorRecibo li p{
+    color: var(--colorSecundario);
+    font-size: 1.2rem;
+    letter-spacing: .15rem;
+}
+#contenedorRecibo li span{
+    font-size: 1.2rem;
+    letter-spacing: .15rem;
+}
+.list-group-numbered>.list-group-item::before{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--colorPrimario);
+}
+#qtElemento{
+    background-color: var(--colorPrimario);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+.tituloH2Modificado{
+    color: var(--colorSecundario);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: .4rem;
+}
+
+/* --------- */

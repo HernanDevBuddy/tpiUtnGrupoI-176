@@ -136,12 +136,12 @@ function crearCarrito(){
         </div>
         <div class="container col-8 justify-content-center mt-2 mb-2">
           <div class="progress">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
         </div>
         <div class="col-8 offset-2 mb-5">
-        <a href="#" class="col-12"><button class="btn btn-success col-12">Continuar</button></a>
+        <a href="./recibo.html" class="col-12"><button class="btn btn-success col-12">Continuar</button></a>
         </div>
         `
   })

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>¡Gracias! - Shots & Co</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <!-- jsPDF -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+
+        <!-- ------ -->
+        <!-- alert -->
+        <script
+        src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+        integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!--  -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-..."
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+          crossorigin="anonymous"
+        />
+        <link href="https://fonts.cdnfonts.com/css/bohemian-typewriter" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styleRecibo.css" />
+        <link rel="icon" href="../img/logo.ico">
+      </head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navegacion d-flex align-items-center">
+            <div class="logo">
+              <a href="../index.html"> <h1>Shots & Co</h1></a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav d-flex justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="productos.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html#nosotros"
+                    >Nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html#team">Equipo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html#contacto"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container">
+
+        <div class="container-fluid pt-5 pb-5"></div>
+        <form action="">
+            <div class="card bg-dark px-5 py-3" id="step1">
+                <h2 class="text-center tituloH2Modificado">1- Datos Personales</h2>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Nombre</span>
+                    <input type="text" class="form-control" placeholder="Horacio Peréz" aria-label="Nombre" aria-describedby="basic-addon1" required>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Fecha de Nacimiento</label>
+    
+                    <input type="number" class="form-control" placeholder="01" aria-label="Fecha de Nacimiento" aria-describedby="basic-addon1" required>
+    
+                    <select class="form-select" id="inputGroupSelect01">
+                        <option class="text-dark" selected>Mes</option>
+                        <option class="text-dark" value="Enero">Enero</option>
+                        <option class="text-dark" value="Febrero">Febrero</option>
+                        <option class="text-dark" value="Marzo">Marzo</option>
+                        <option class="text-dark" value="Abril">Abril</option>
+                        <option class="text-dark" value="Mayo">Mayo</option>
+                        <option class="text-dark" value="Junio">Junio</option>
+                        <option class="text-dark" value="Julio">Julio</option>
+                        <option class="text-dark" value="Agosto">Agosto</option>
+                        <option class="text-dark" value="Septiembre">Septiembre</option>
+                        <option class="text-dark" value="Octubre">Octubre</option>
+                        <option class="text-dark" value="Noviembre">Noviembre</option>
+                        <option class="text-dark" value="Diciembre">Diciembre</option>
+                    </select>
+    
+                    <input type="number" class="form-control" placeholder="1900" aria-label="Fecha de Nacimiento" aria-describedby="basic-addon1" required>
+    
+                </div>
+                
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon2">Email</span>
+                    <input type="email" class="form-control" placeholder="horacioperez@correo.com" aria-label="horacioperez@correo.com" aria-describedby="basic-addon2" required>
+                </div>
+    
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Selecciona tu Provincia</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                        <option class="text-dark" selected>Provincia</option>
+                        <option class="text-dark" value="Buenos Aires">Buenos Aires</option>
+                        <option class="text-dark" value="CABA">CABA</option>
+                        <option class="text-dark" value="Catamarca">Catamarca</option>
+                        <option class="text-dark" value="Chaco">Chaco</option>
+                        <option class="text-dark" value="Chubut">Chubut</option>
+                        <option class="text-dark" value="Córdoba">Córdoba</option>
+                        <option class="text-dark" value="Corrientes">Corrientes</option>
+                        <option class="text-dark" value="Entre Ríos">Entre Ríos</option>
+                        <option class="text-dark" value="Formosa">Formosa</option>
+                        <option class="text-dark" value="Jujuy">Jujuy</option>
+                        <option class="text-dark" value="La Pampa">La Pampa</option>
+                        <option class="text-dark" value="La Rioja">La Rioja</option>
+                        <option class="text-dark" value="Mendoza">Mendoza</option>
+                        <option class="text-dark" value="Misiones">Misiones</option>
+                        <option class="text-dark" value="Neuquén">Neuquén</option>
+                        <option class="text-dark" value="Río Negro">Río Negro</option>
+                        <option class="text-dark" value="Salta">Salta</option>
+                        <option class="text-dark" value="San Juan">San Juan</option>
+                        <option class="text-dark" value="San Luis">San Luis</option>
+                        <option class="text-dark" value="Santa Cruz">Santa Cruz</option>
+                        <option class="text-dark" value="Santa Fe">Santa Fe</option>
+                        <option class="text-dark" value="Santiago del Estero">Santiago del Estero</option>
+                        <option class="text-dark" value="Tierra del Fuego">Tierra del Fuego</option>
+                        <option class="text-dark" value="Tucumán">Tucumán</option>
+                    </select>
+                </div>
+    
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3">Ciudad</span>
+                    <input type="text" class="form-control" placeholder="Rio Cuarto" aria-label="Ciudad" aria-describedby="basic-addon3">
+                </div>
+    
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon4">Domicilio de Entrega</span>
+                    <input type="text" class="form-control" placeholder="Calle Siempreviva 742" aria-label="Domicilio de Entrega" aria-describedby="basic-addon4">
+                </div>
+                <div class="col-8 offset-2">
+                    <button type="button" class="btn btn-success col-12 btnStepPay" id="btnStep1">Siguiente</button>
+                </div>
+    
+            </div>
+
+            <div class="card bg-dark px-5 py-3" id="step2" style="display: none;">
+                <h2 class="text-center tituloH2Modificado">2- Informacion Bancaria</h2>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Número de tarjeta</span>
+                    <input type="text" class="form-control" placeholder="XXXX-XXXX-XXXX-XXXX" aria-label="Número de tarjeta" aria-describedby="basic-addon1" required>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Fecha de expiración</span>
+                    <input type="text" class="form-control" placeholder="MM/AA" aria-label="Fecha de expiración" aria-describedby="basic-addon1" required>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">CVV</span>
+                    <input type="text" class="form-control" placeholder="XXX" aria-label="CVV" aria-describedby="basic-addon1" required>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Nombre en la tarjeta</span>
+                    <input type="text" class="form-control" placeholder="XXX" aria-label="Nombre completo" aria-describedby="basic-addon1" required>
+                </div>
+                <div class="col-8 offset-2">
+                    <button type="button" class="btn btn-success col-12 btnStepPay">Pagar</button>
+                </div>
+            </div>
+
+        </form>
+
+        <div class="card" id="contenedorRecibo" style="display: none;">
+
+        <br>
+        <h2 class="card-title tituloH2Modificado text-center"> <span>Gracias</span> por tu compra!</h2>
+        <br>
+
+        <ol class="list-group list-group-numbered" id="recibo">
+        </ol>
+        <br>
+        <h3 class="text-center tituloH2Modificado" id="totalRecibo"></h3>
+
+            <div class="container col-8 justify-content-center mt-2 mb-2">
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+            </div>
+            </div>
+            <button class="btn d-inline mx-auto" id="btnPdf">Exportar Recibo a PDF</button>
+
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="../src/arrayProductos.js"></script>
+    <script src="../src/arrayCarrito.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="../Js/recibo.js"></script>
+    
+</body>
+</html>
