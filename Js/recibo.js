@@ -60,17 +60,28 @@ function pagar(){
 
 btnPdf.addEventListener('click',function(){
     let doc = new jsPDF();
+    let suma = 0
     for (let i = 0; i < carrito.length; i++) {
         fila=carrito[i]
-       doc.text(20, 20 + i*10, fila.categoria);
-       doc.text(60, 20 + i*10, fila.nombre);
-       doc.text(100, 20 + i*10, fila.cantidad);
-       doc.text(140, 20 + i*10, fila.precio * fila.cantidad);
-       suma += fila.precio * fila.cantidad;
+        doc.setFont('Courier')
+        doc.text("Shots & Co", 85, 10)
+        doc.text("Gracias por elegirnos, que disfrutes de la Fiesta!", 15, 25);
+        // let QT = fila.cantidad.toString()
+        doc.text(5, 45 + i * 10, String(fila.cantidad));
+        doc.text(10, 45 + i * 10, fila.categoria);
+        doc.text(40, 45 + i * 10, fila.nombre);
+        let sbt = fila.precio * fila.cantidad;
+        let sbtString = "$ "+sbt.toString()
+        doc.text(180, 45 + i * 10, sbtString);
+        
+        suma += fila.precio * fila.cantidad;
     }
-    total = "TOTAL = $"
-    doc.text(220, 20 + carrito.length * 10, total + suma);
-    doc.save("recibo.pdf");
+    let sumaString = suma.toString()
+    let total = "TOTAL = $";
+    let Y = 55 + carrito.length * 10;
+    // console.log(Y + total + sumaString);
+    doc.text(155, Y, total + sumaString);
+    doc.save("Compra.pdf");
 })
 
 pagar();

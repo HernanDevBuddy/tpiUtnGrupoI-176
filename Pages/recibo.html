@@ -6,10 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>¡Gracias! - Shots & Co</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-        <!-- jsPDF -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
-
-        <!-- ------ -->
         <!-- alert -->
         <script
         src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
@@ -160,6 +156,13 @@
                 <div class="col-8 offset-2">
                     <button type="button" class="btn btn-success col-12 btnStepPay" id="btnStep1">Siguiente</button>
                 </div>
+
+                <div class="container col-8 justify-content-center mt-2 mb-2">
+                  <div class="progress">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                      </div>
+                  </div>
+                  </div>
     
             </div>
 
@@ -184,11 +187,19 @@
                 <div class="col-8 offset-2">
                     <button type="button" class="btn btn-success col-12 btnStepPay">Pagar</button>
                 </div>
+
+                <div class="container col-8 justify-content-center mt-2 mb-2">
+                  <div class="progress">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                      </div>
+                  </div>
+                  </div>
+
             </div>
 
         </form>
 
-        <div class="card" id="contenedorRecibo" style="display: none;">
+        <div class="card py-5" id="contenedorRecibo" style="display: none;">
 
         <br>
         <h2 class="card-title tituloH2Modificado text-center"> <span>Gracias</span> por tu compra!</h2>
@@ -205,14 +216,14 @@
                 </div>
             </div>
             </div>
-            <button class="btn d-inline mx-auto" id="btnPdf">Exportar Recibo a PDF</button>
+            <button class="btn d-inline mx-auto mt-3 mb-5" id="btnPdf">Exportar Recibo a PDF</button>
 
 
         </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
     <script src="../src/arrayProductos.js"></script>
     <script src="../src/arrayCarrito.js"></script>
     <script src="../js/productos.js"></script>
